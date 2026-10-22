@@ -1,20 +1,41 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+
+# Platinum Crest
+
+**Luxury residential landing page for a G+16 tower in Upper Juhu, Mumbai.**
+
+### [Open the live demo →](https://platinum-corp-demo.vercel.app)
+
+<img src="https://raw.githubusercontent.com/baerozgaarmard/baerozgaarmard/main/assets/platinum.jpg" alt="Platinum Crest hero: A Sanctuary of High-Altitude Living" width="760">
+
 </div>
 
-# Run and deploy your AI Studio app
+> An unofficial concept built as a portfolio demo. It is not affiliated with or endorsed by Platinum Corp, so confirm any project detail with the developer.
 
-This contains everything you need to run your app locally.
+## What's on the page
 
-View your app in AI Studio: https://ai.studio/apps/ceac5ccd-052d-486b-b1e2-8d201720ef7c
+- Hero, overview and highlights
+- Amenities and floor plans for the 1 and 2 BHK homes
+- Video tour
+- Location advantages with an interactive Google Map of nearby landmarks
+- Comparison, developer track record and buyer-trust sections
+- FAQ, contact section and a brochure request form
 
-## Run Locally
+## Stack
 
-**Prerequisites:**  Node.js
+React 19 · TypeScript · Vite · Tailwind CSS 4 · Motion · Google Maps (`@vis.gl/react-google-maps`) · deployed on Vercel
 
+## Run it locally
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
+npm run dev
+```
+
+The site runs at http://localhost:3000. To show the live map, put a Google Maps key in `.env.local`:
+
+```bash
+VITE_GOOGLE_MAPS_PLATFORM_KEY=your_key_here
+```
+
+Without a key the map section shows a fallback instead. `npm run build` makes a production build and `npm run lint` type-checks the project.
